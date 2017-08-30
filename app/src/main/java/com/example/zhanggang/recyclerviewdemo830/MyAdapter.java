@@ -14,7 +14,7 @@ import android.widget.TextView;
 import java.util.List;
 
 /**
- * 类作用：
+ * 类作用：recyclerview适配器
  * 时  间：2017/8/30 - 20:00.
  * 创建人：张刚
  */
@@ -31,6 +31,7 @@ public class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        //加载布局
         View inflate = LayoutInflater.from(parent.getContext()).inflate(R.layout.item, parent, false);
         return new ViewHolder(inflate);
     }
